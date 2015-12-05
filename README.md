@@ -12,7 +12,7 @@ Run Pelican, do these:
 
 **Step 1**: Clone this entire repo
 ```bash
-$ git clone https://github.com/whaleen/pelican.git bs-recipes
+$ git clone https://github.com/whaleen/pelican.git
 ```
 
 **Step 2**: Move into the directory containing Pelican
