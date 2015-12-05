@@ -11,7 +11,6 @@ var src = {
     html: 'app/*.html'
 };
 
-
 /**
  * Kick off the sass stream with source maps + error handling
  */
@@ -39,13 +38,6 @@ gulp.task('serve', ['sass'], function() {
     gulp.watch(src.html).on('change', reload);
 });
 
-
-
-
-
-
-
-
 /**
  * Compile sass, filter the results, inject CSS into all browsers
  */
@@ -55,7 +47,6 @@ gulp.task('sass', function() {
         .pipe(filter("**/*.css"))
         .pipe(reload({stream: true}));
 });
-
 
 /**
  * Default task
