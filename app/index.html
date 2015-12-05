@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>Pelican</title>
+  <meta name="description" content="Gulp tasks over Sass development.">
+  <meta name="author" content="Joshua Vaage">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="css/pelican.css">
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+
+</head>
+<body>
+
+<!-- Example: Panels
+  Must be at the top of the HTML document before div.panel-wrapper
+---------------------------------------------------->
+  <div class="panel panel-top bg-black" style="">
+    <div class="container">
+        <div class="row">
+          <div class="one column">
+          <a id="top" class="panel-close">X</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-left bg-red" style="">
+    <div class="container">
+        <div class="row">
+          <div class="one column">
+          <a id="left" class="panel-close">X</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-right bg-red" style="">
+    <div class="container">
+        <div class="row">
+          <div class="one column">
+          <a id="right" class="panel-close">X</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-bottom bg-red" style="">
+    <div class="container">
+        <div class="row">
+          <div class="one column">
+          <a id="bottom" class="panel-close">X</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- End Example: Panels-->
+
+
+
+<div class="panel-wrapper">
+
+  <section class="vw-container bg-black white">
+  <div class="container">
+    <div class="row">
+      <div class="six columns">
+
+        <p class="">
+        <a class="button" href="https://github.com/whaleen/poise/archive/master.zip"><i class="ion-ios-download"></i> Download Source</a>
+        <a class="button"><i class="ion-social-github"></i> View on GitHub</a></p>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <section class="vw-container bg-white gray">
+    <div class="container">
+        <div class="row">
+          <div class="eight columns">
+            <h1 class="black">Pelican</h1>
+            <p>Pelican is a library of components for prototyping designs in the browser. It has a modularized Sass implementation of <a href="#components">Skeleton</a> with tiny additional CSS modules.</p>
+
+               <p>All modules share <a href="#components">Sass</a> variables and are compiled into an 56kb <strong>unminified</strong> CSS file called <a href="#components">pelican.css</a> .</p>
+
+               <p>Pelican uses <a href="#components">Gulp</a> to compile Sass and inject changes live into the browser.</p>
+
+          </div>
+
+
+          <div class="four columns">
+            <img src="images/pelican-logo.png">
+          </div>
+        </div>
+    </div>
+</section>
+
+
+  <section class="bg-aqua white">
+    <div class="container">
+        <div class="row">
+          <div class="eight columns">
+            <i class="ion-repo-fork"></i>
+            <h3 class="">Try Pelican</h3>
+              <p class="">
+
+
+                <p>Clone this entire repo</p>
+
+                <p><code class="bg-blue white border--blue">$ git clone https://github.com/whaleen/pelican.git</code></p>
+
+
+                <p>Move into the directory containing Pelican</p>
+                <p><code class="bg-blue white border--blue">
+                $ cd pelican
+              </code></p>
+
+
+                <p>Install dependencies</p>
+                <p><code class="bg-blue white border--blue">$ npm install</code></p>
+
+                <p>Run Pelican</p>
+                <code class="bg-blue white border--blue">
+                $ npm start
+              </code>
+
+              </p>
+        </div>
+        <div class="four columns">
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="colors" class="bg-white gray">
+  <div class="container">
+    <h2 class="black">Colors</h2>
+
+    <p class="">Sass color variables allow you to define a pallate of 17 colors. Here are the defaults. </p>
+    <div class="row colors">
+      <div class="two columns bg-aqua black">aqua</div>
+      <div class="two columns bg-blue">blue</div>
+      <div class="two columns bg-navy white">navy</div>
+      <div class="two columns bg-teal">teal</div>
+      <div class="two columns bg-green">green</div>
+      <div class="two columns bg-olive">olive</div>
+    </div>
+    <div class="row colors">
+      <div class="two columns bg-lime">lime</div>
+      <div class="two columns bg-yellow">yellow</div>
+      <div class="two columns bg-orange">orange</div>
+      <div class="two columns bg-red">red</div>
+      <div class="two columns bg-fuchsia">fuchsia</div>
+      <div class="two columns bg-purple">purple</div>
+    </div>
+    <div class="row colors">
+      <div class="two columns bg-maroon">maroon</div>
+      <div class="two columns bg-white border--gray">white</div>
+      <div class="two columns bg-silver">silver</div>
+      <div class="two columns bg-gray">gray</div>
+      <div class="two columns bg-black gray">black</div>
+    </div>
+  </div>
+</section>
+
+
+<section id="colors" class="bg-black silver">
+  <div class="container">
+    <h2 class="aqua">Panels</h2>
+
+    <p>You can use Panels for menus, important messages, off canvas page elements, or any other thing you want.</p>
+
+    <div class="row">
+      <div class="three columns">
+        <button id="top" class="panel-trigger bg-black white border--white" data-close="false">Top Panel</button>
+      </div>
+      <div class="three columns">
+        <button id="left" class="panel-trigger bg-black white border--white" data-close="false">Left Panel</button>
+      </div>
+      <div class="three columns">
+        <button id="right" class="panel-trigger bg-black white border--white" data-close="false">Right Panel</button>
+      </div>
+      <div class="three columns">
+        <button id="bottom" class="panel-trigger bg-black white border--white" data-close="false">Bottom Panel</button>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+  <section id="components" class="vw-container bg-white gray">
+    <div class="container">
+
+<h1>Pelican Components</h1>
+<p>Thank you authors. Component documentation, licensing, and author urls listed below.</p>
+<hr>
+<h2>HTML / CSS</h2>
+
+      <div class="row">
+        <div class="four columns">
+          <h4 class="black">Skeleton</h4>
+          <p>A dead simple, responsive boilerplate.</p>
+          <p><a href="http://getskeleton.com">Docs</a> | <a href="http://davegamache.com">Author</a> | (MIT)</p>
+        </div>
+        <div class="four columns">
+          <h4 class="black">Colors</h4>
+          <p>A nicer color palette for the web.</p>
+          <p><a href="http://clrs.cc">Docs</a> | <a href="http://mrmrs.cc">Author</a> | (MIT)</p>
+        </div>
+        <div class="four columns">
+          <h4 class="black">animate.css</h4>
+          <p>Just-add-water CSS animation.</p>
+          <p><a href="https://github.com/daneden/animate.css#basic-usage">Docs</a> | <a href="http://daneden.me">Author</a> | (MIT)</p>
+        </div>
+      </div><!-- /.row -->
+      <hr >
+<h2>Javascript</h2>
+      <div class="row">
+
+        <div class="four columns">
+          <h4 class="black">jQuery</h4>
+          <p>Pelican come with jQuery.</p>
+          <p><a href="https://jquery.com/">Docs</a> | <a href="http://ejohn.org">Author</a> | (MIT)</p>
+        </div>
+        <div class="four columns">
+          <h4 class="black">Scroll</h4>
+          <p>Scroll weighs <strong>333 bytes</strong>. It is optional. Requires <a href="https://jquery.com/">jQuery</a>.</p>
+          <p><a href="http://joshuavaage.com">Docs</a> | <a href="http://joshuavaage.com">Author</a> | WTFC</p>
+        </div>
+        <div class="four columns">
+          <h4 class="black">Panels</h4>
+          <p>Panel weighs <strong>2kb</strong>. It is optional. Requires <a href="https://jquery.com/">jQuery</a>.</p>
+            <p><a href="http://quoid.github.io/panels/index.html">Docs</a> | <a href="https://github.com/quoid">Author</a> | (GPL v2)</p>
+        </div>
+      </div><!-- /.row -->
+
+    </div>
+  </section>
+
+</div><!-- /.panel-wrapper required for Panels to work. Required to be parent element to all page elemets. -->
+
+
+<script src="js/jquery.min.js"></script>
+
+
+  <!-- Small jQuery library offering simple yet diverse "off-canvas" functionality -->
+  <script src="js/panels.jquery.js"></script>
+    <!-- Panels example scripts -->
+    <script src="js/panels.scripts.jquery.js"></script>
+
+  <!-- jQuery dependant: links animated scroll to anchor  -->
+  <script src="js/anchorscroll.jquery.js"></script>
+
+</body>
+</html>

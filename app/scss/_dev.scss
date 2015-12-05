@@ -1,0 +1,41 @@
+// Image expiriments
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+body {}
+.top-padding-60 {padding-top: 60px;}
+.circle {
+border-radius: 50%;
+}
+
+
+a, a:hover {color: $aqua;}
+
+.shit {
+  margin-top: -100px;
+}
+
+div.colors > div {height: 60px; padding-top: 20px; margin-top: 20px;text-align: center;}
+
+section {padding: 60px 0px; }
+
+.pelican-beak {
+  background: url(../images/pelican-beak-cam.gif) no-repeat center center fixed;
+  opacity: 0.3;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+}
+
+// to use with color
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+.border { border-width: 1px; border-style: solid; }
+
+.full-bleed {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
